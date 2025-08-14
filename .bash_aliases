@@ -31,8 +31,42 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-# Say bye to get out
-alias bye="logout"
+# Shortcut to get into labpc
+alias labpc='ssh kpothiwala2023@FT-1CPY5X3.fit.edu'
+
+# Moving up a direcotry without using cd
+alias ..='cd ..'
+
+# Moving up two directories
+alias ...='cd ../..'
+
+# Clear the terminal screen
+alias c='clear'
+
+# Ask before removing
+alias rm='rm -i'
+
+# Make a directory and cd into it
+mkcd() { mkdir -p "$1" && cd "$1"; }
+
+# Get weather info
+alias weather='curl wttr.in/$(read -p "Enter city: " city; echo $city)'
+
+# Get word info
+alias define='sdcv'
+
+# Searching in terminal
+alias ddg='open "https://duckduckgo.com/?q=$*"'
+
+# Updating
+alias update='brew update && brew upgrade -y'
+
 
 # python vs python3
 alias python="python3"
+
+# Shortcut to get into labpc
+alias labpc='ssh kpothiwala2023@FT-1CPY5X3.fit.edu'
+
+# Say bye to get out
+alias bye="logout"
