@@ -5,7 +5,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/velvet.omp.json)"
+eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/velvet.omp.json)"
 
 # Setting up the colors I want
 Purple=$(tput setaf 135);
