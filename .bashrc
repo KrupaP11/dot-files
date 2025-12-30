@@ -6,7 +6,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/velvet.omp.json)"
-
+~/.config/oh-my-posh/velvet.omp.json
 # Setting up the colors I want
 Purple=$(tput setaf 135);
 Blue=$(tput setaf 033);
@@ -30,3 +30,10 @@ shopt -s cdspell;
 
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend;
+
+# don't put duplicate lines in the history. See bash(1) for more options
+# don't overwrite GNU Midnight Commander's setting of `ignorespace'.
+HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoredups
+# ... or force ignoredups and ignorespace
+HISTCONTROL=ignoreboth
+
